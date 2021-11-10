@@ -1,5 +1,6 @@
 {
-  "name": "vite-reactts-eslint-prettier",
+  "name": "baasheim-gjestegaard",
+  "homepage": "https://baasheimgjestegaard.no",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -15,6 +16,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@types/node": "^16.11.6",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
@@ -30,7 +32,8 @@
     "pre-commit": "^1.2.2",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5",
-    "vite": "^2.4.1"
+    "vite": "^2.4.1",
+    "vite-imagetools": "^3.9.0"
   },
   "pre-commit": "lint",
   "license": "MIT"
