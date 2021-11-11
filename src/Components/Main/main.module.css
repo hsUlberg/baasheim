@@ -3,9 +3,19 @@
 
 .mainImage {
   margin-top: 2vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* display: ; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* max-width: 50vh; */
+  /* width: auto; */
   max-width: 50vh;
-  width: auto;
+  width: 85%;
+  height: auto;
+}
+
+.floatContainer {
+}
+
+.floatChild {
+  float: left;
 }

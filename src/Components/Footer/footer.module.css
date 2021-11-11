@@ -1,13 +1,50 @@
 .footer {
   background-color: #373737;
+  margin-top: 25px;
+  display: flex;
+  width: auto;
 }
 
-.footerText {
+@media screen and (max-width: 800px) {
+  .footer {
+    display: flex;
+    flex-flow: column;
+  }
+  .floatChildText {
+    order: 1;
+  }
+  .imageDiv {
+    order: 2;
+  }
+}
+
+.footerHeaderText {
   font-family: cursive;
   font-size: 30px;
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 3vh;
+  margin-top: 5vh;
 }
 
-.FooterContents {
+.footerText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: #fff;
+  margin-bottom: 2vh;
+}
+
+.floatChildText {
+  width: 100%;
+  float: left;
+}
+.imageDiv {
+  float: left;
+  width: 100%;
+}
+.floatChildImage {
+  max-width: 95%;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  /* float: left; */
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import style from './main.module.css';
 
@@ -9,11 +10,11 @@ export function Main(): JSX.Element {
     'overnatting',
     ' selskapsLokaler',
   ]);
-  const url = new URL('./images/hovedBygning.JPG', import.meta.url).href;
+  const url = new URL('./images/hovedBygning-min.JPG', import.meta.url).href;
 
   return (
     <div className={style.main}>
-      <img alt="test" src={url} className={style.mainImage} />
+      <LazyLoadImage effect="blur" alt="main" src={url} className={style.mainImage} />
       <h2>Om båsheim Gjestegård</h2>
       <h2>Historie:</h2>
       <div>
