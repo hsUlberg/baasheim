@@ -1,6 +1,33 @@
 .main {
+  margin-top: 25px;
+  display: flex;
+  width: auto;
 }
 
+@media screen and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-flow: column;
+  }
+  .floatChildText {
+    order: 1;
+  }
+  .mainImage {
+    order: 2;
+  }
+}
+
+.floatChildText {
+  width: 100%;
+  float: left;
+  margin-left: 10%;
+}
+
+.imageDiv {
+  float: left;
+  width: 100%;
+  margin-right: 10%;
+}
 .mainImage {
   margin-top: 2vh;
   /* display: ; */
@@ -9,8 +36,8 @@
   /* max-width: 50vh; */
   /* width: auto; */
   max-width: 50vh;
-  width: 85%;
-  height: auto;
+  /* width: 85%; */
+  /* height: auto; */
 }
 
 .floatContainer {

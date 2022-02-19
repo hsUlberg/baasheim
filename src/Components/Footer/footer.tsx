@@ -18,7 +18,7 @@ export function Footer(): JSX.Element {
         <div className={style.footerHeaderText}>Kontakt oss</div>
         <div className={style.footerText}>Addresse: trengerAddresse, 3350 Prestfoss</div>
         <div className={style.footerText}>E-post: test@test.no</div>
-        <div className={style.footerText}>Tlf: 999 99 999</div>
+        <div className={style.footerText}>Tlf: +47 976 10 989</div>
       </div>
       <div className={style.imageDiv}>
         <img

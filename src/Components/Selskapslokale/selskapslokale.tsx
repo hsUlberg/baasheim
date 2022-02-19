@@ -47,9 +47,27 @@ export function Selskapslokale(): JSX.Element {
       {/* <img alt="test" src={url} className={style.mainImage} /> */}
       <h2>Selskapslokale</h2>
       <div>
-        Hovedhuset har en stor stue i gammel stil med plass til cs. 20 personer. For
-        større selskaper sommerstid er den gamle låven innredet som festlokale.
+        Hovedhuset har en stor stue i gammel stil med plass til opp mot 30 personer.
+        <div>
+          For større selskaper sommerstid er den gamle låven innredet som festlokale.
+        </div>
+        <div>
+          Her har du muligheten til å organisere og tilpasse selskapet du ønsker i det
+          rimligere sjikt.
+        </div>
+        <div>
+          Hovedhuset har også ett stort kjøkken, der du har mulighet til å lage maten selv
+          om ønskelig.
+        </div>
+        <div>
+          Kjøkkenet har også ett stort kjølerom der du har mulighet til å oppbevare maten.
+        </div>
+        <div>
+          Vi har ett sammarbeid med AM katring for mat levering hvis det er ønskelig.
+        </div>
+        <div>Ta kontakt hvis du ønsker en befaring og tilbud.</div>
       </div>
+      {/* legge inn bilder av kjøkken */}
       {/* {activeUrls ? ( */}
       <div className={style.imageSlider}>
         <SimpleImageSlider
@@ -58,9 +76,9 @@ export function Selskapslokale(): JSX.Element {
           images={urls}
           showBullets={true}
           showNavs={true}
-          autoPlay={true}
+          autoPlay={false}
           loop={true}
-          autoPlayDelay={5}
+          // autoPlayDelay={5}
         />{' '}
       </div>
       {/* ) : (

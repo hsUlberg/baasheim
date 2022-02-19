@@ -16,7 +16,7 @@ export function Header(): JSX.Element {
   // };
   return (
     <div className={style.header}>
-      <div className={style.headerText}>Båsheim gjestegård</div>
+      <div className={style.headerText}>Båsheim Gjestegård</div>
 
       {/* {activeHeader.map((active) => (
         <button onClick={() => activeHeaders(active)} key={active}>

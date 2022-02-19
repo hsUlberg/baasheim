@@ -96,11 +96,14 @@ export function Overnatting(): JSX.Element {
     <div className={style.main}>
       {/* <img alt="test" src={url} className={style.mainImage} /> */}
       <h2>Overnatting</h2>
+      <div>Gjestegården består av 8 soverom med nytt bad på hvert av rommene.</div>
+      <div>Her kan du både få dobbelt rom eller enkelt rom</div>
+      <div>I felles arealene er stilen godt bevart.</div>
       <div>
-        Gjestegården består av 8 soverom med nytt bad på hvert av rommene. Rommene er
-        beholdt i gammel stil siden gjestegården fungerte som skysstasjon med nye bad til
-        hvert rom.
+        Her kan du leve deg tilbake som om du var en reisende 100 år tilbake i tid.
       </div>
+      <div>fasiliteter som internett og TV kan du finne i felles arealene.</div>
+      <div>priser fra 800 kr per rom.</div>
       {/* <button onClick={test}>test</button> */}
       {/* {activeUrls ? ( */}
       <div className={style.imageSlider}>
@@ -110,9 +113,9 @@ export function Overnatting(): JSX.Element {
           images={urls}
           showBullets={true}
           showNavs={true}
-          autoPlay={true}
+          autoPlay={false}
           loop={true}
-          autoPlayDelay={5}
+          // autoPlayDelay={5}
         />
       </div>
       {/* ) : (
