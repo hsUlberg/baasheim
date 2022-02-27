@@ -16,9 +16,24 @@ export function Footer(): JSX.Element {
     <div className={style.footer}>
       <div className={style.floatChildText}>
         <div className={style.footerHeaderText}>Kontakt oss</div>
-        <div className={style.footerText}>Addresse: trengerAddresse, 3350 Prestfoss</div>
-        <div className={style.footerText}>E-post: test@test.no</div>
-        <div className={style.footerText}>Tlf: +47 976 10 989</div>
+        <div className={style.footerText}>
+          Addresse: sigdalsveien 3632, 3350 Prestfoss
+        </div>
+        <div className={style.footerText}>
+          E-post: <span>bk</span>
+          <span>u@</span>
+          <span>bro</span>
+          <span>ad</span>
+          <span>park</span>
+          <span>.</span>
+          <span>no</span>
+        </div>
+        <div className={style.footerText}>
+          Tlf: <span>+47 </span>
+          <span>976 </span>
+          <span>10 9</span>
+          <span>89</span>
+        </div>
       </div>
       <div className={style.imageDiv}>
         <img

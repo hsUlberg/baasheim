@@ -1,29 +1,11 @@
 import './slider.css';
 
-import React, { useState } from 'react';
+import React from 'react';
 import SimpleImageSlider from 'react-simple-image-slider';
 
 import style from './overnatting.module.css';
 // eslint-disable-next-line no-undef
 export function Overnatting(): JSX.Element {
-  // eslint-disable-next-line no-unused-vars
-  const [activeHeader, setActiveHeader] = useState<string[]>([
-    'overnatting',
-    ' selskapsLokaler',
-  ]);
-  // const [activeUrls, setActiveUrls] = useState<{ url: string }[]>();
-  // const imagePaths = {
-  //   rom1: ['rom1', 'bad1', 'bad2'],
-  //   rom2: ['rom1', 'bad1'],
-  //   rom3: ['romEn', 'badEn', 'badTo'],
-  //   rom4: ['rom1', 'bad1'],
-  //   rom5: ['rom1', 'bad1'],
-  //   rom6: ['rom1', 'bad1'],
-  //   rom7: ['rom1'],
-  //   rom8: ['rom1', 'bad1'],
-  //   rom9: ['rom1', 'rom2', 'bad1'],
-  //   rom10: ['rom1', 'rom2', 'bad1'],
-  // };
   const rom1Rom1 = new URL(`./images/rom1/rom1.JPG`, import.meta.url).href;
   const rom1Bad1 = new URL(`./images/rom1/bad1.JPG`, import.meta.url).href;
   const rom1Bad2 = new URL(`./images/rom1/bad2.JPG`, import.meta.url).href;
@@ -74,53 +56,33 @@ export function Overnatting(): JSX.Element {
     { url: rom10Bad1 },
   ];
 
-  //   const url = new URL('./images/hovedBygning.JPG', import.meta.url).href;
-  // const getUrls = async function () {
-  //   const urls = Object.entries(imagePaths)
-  //     .map(([roomFolder, array]) =>
-  //       array.map((image) => {
-  //         const url = new URL(`./images/${roomFolder}/${image}.JPG`, import.meta.url)
-  //           .href;
-  //         return { url: url };
-  //       }),
-  //     )
-  //     .flat(2);
-  //   console.log(urls);
-  //   setActiveUrls(urls);
-  // };
-  // useEffect(() => {
-  //   getUrls();
-  // }, []);
-
   return (
     <div className={style.main}>
-      {/* <img alt="test" src={url} className={style.mainImage} /> */}
-      <h2>Overnatting</h2>
-      <div>Gjestegården består av 8 soverom med nytt bad på hvert av rommene.</div>
-      <div>Her kan du både få dobbelt rom eller enkelt rom</div>
-      <div>I felles arealene er stilen godt bevart.</div>
-      <div>
-        Her kan du leve deg tilbake som om du var en reisende 100 år tilbake i tid.
+      <div className={style.floatChildText}>
+        <div className={style.textElement}>
+          <h2>Overnatting</h2>
+          <div>
+            Gjestegården består av 8 soverom med nytt bad på hvert av rommene. Her kan du
+            både få dobbelt rom eller enkelt rom I felles arealene er stilen godt bevart.
+            Her kan du leve deg tilbake som om du var en reisende 100 år tilbake i tid.
+            fasiliteter som internett og TV kan du finne i felles arealene. priser fra 800
+            kr per rom.
+          </div>
+        </div>
       </div>
-      <div>fasiliteter som internett og TV kan du finne i felles arealene.</div>
-      <div>priser fra 800 kr per rom.</div>
-      {/* <button onClick={test}>test</button> */}
-      {/* {activeUrls ? ( */}
-      <div className={style.imageSlider}>
-        <SimpleImageSlider
-          width={700}
-          height={700}
-          images={urls}
-          showBullets={true}
-          showNavs={true}
-          autoPlay={false}
-          loop={true}
-          // autoPlayDelay={5}
-        />
+      <div className={style.imageDiv}>
+        <div className={style.imageSlider}>
+          <SimpleImageSlider
+            width={700}
+            height={700}
+            images={urls}
+            showBullets={true}
+            showNavs={true}
+            autoPlay={false}
+            loop={true}
+          />
+        </div>
       </div>
-      {/* ) : (
-        ''
-      )}{' '} */}
     </div>
   );
 }

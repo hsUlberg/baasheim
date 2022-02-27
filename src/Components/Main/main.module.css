@@ -2,6 +2,8 @@
   margin-top: 25px;
   display: flex;
   width: auto;
+  text-align: center;
+  flex-flow: row;
 }
 
 @media screen and (max-width: 800px) {
@@ -20,24 +22,22 @@
 .floatChildText {
   width: 100%;
   float: left;
-  margin-left: 10%;
+  /* margin-left: 10%; */
+  text-align: left;
+  /* max-width: 500px; */
+}
+.textElement {
+  max-width: 500px;
 }
 
 .imageDiv {
   float: left;
   width: 100%;
-  margin-right: 10%;
+  /* margin-right: 10%; */
 }
 .mainImage {
   margin-top: 2vh;
-  /* display: ; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* max-width: 50vh; */
-  /* width: auto; */
   max-width: 50vh;
-  /* width: 85%; */
-  /* height: auto; */
 }
 
 .floatContainer {
@@ -45,4 +45,14 @@
 
 .floatChild {
   float: left;
+}
+
+.mainImageTop {
+  margin: auto;
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 80%;
 }

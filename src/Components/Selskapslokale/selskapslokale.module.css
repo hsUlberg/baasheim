@@ -1,7 +1,24 @@
 .main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  width: auto;
 }
 .imageSlider {
   margin: auto;
   width: 700px;
   padding: 10px;
+}
+
+.floatChildText {
+  width: 100%;
+  float: left;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.imageDiv {
+  float: left;
+  width: 100%;
+  margin-right: 10%;
 }
