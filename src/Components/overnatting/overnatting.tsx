@@ -63,10 +63,16 @@ export function Overnatting(): JSX.Element {
           <h2>Overnatting</h2>
           <div>
             Gjestegården består av 8 soverom med nytt bad på hvert av rommene. Her kan du
-            både få dobbelt rom eller enkelt rom I felles arealene er stilen godt bevart.
-            Her kan du leve deg tilbake som om du var en reisende 100 år tilbake i tid.
-            fasiliteter som internett og TV kan du finne i felles arealene. priser fra 800
-            kr per rom.
+            både få dobbelt rom eller enkelt rom. I felles arealene er den opprinnelige
+            stilen godt bevart. Her kan du lene deg tilbake og nyte inntrykk fra 100 år
+            tilbake. Fasiliteter som kjøkken og TV stue kan du finne i felles arealene.
+            Tråløst internett finnes i hele huset. Priser fra 800 kr per dobbelt rom.
+          </div>
+          <br />
+          <div>
+            For bestilling av rom eller ved andre henvendelser, ta kontakt på telefon
+            eller E-post. <br /> E-post: bku@broadpark.no <br />
+            Tlf: +47 976 10 989
           </div>
         </div>
       </div>

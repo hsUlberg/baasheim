@@ -57,7 +57,7 @@ export function Main(): JSX.Element {
                 <li>Iskjøring</li>
                 <li>Randone</li>
                 <li>Langrenn</li>
-                <li>Alpint bakke (Norefjell 30 min kjøretur)</li>
+                <li>Alpintbakke (Norefjell 30 min kjøretur)</li>
               </ul>
             </div>
           </div>

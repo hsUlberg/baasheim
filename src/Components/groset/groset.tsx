@@ -17,14 +17,16 @@ export function Groset(): JSX.Element {
           <h2>Grøset Seter</h2>
           <div>
             Grøset seter ligger 15 minutter unna Båsheim Gjestegård. Om sommeren er det
-            åpen seter hvor man kan besøke ulike dyr og bli servert rømmegrøt og sveler.
-            Passer perfekt for store og små som ønsker å oppleve seterlivet Her kan du
-            komme tett oppom blandt annet kuer og kalver, kaniner og sauer mm. Omgitt av
-            idyllisk natur og ligger i foten av tryllemarka.
+            åpen seter hvor man kan besøke ulike dyr og få servert rømmegrøt og sveler.
+            Passer perfekt for store og små som ønsker å oppleve seterlivet. Her kan du
+            komme tett innpå blant annet kuer, kalver, kaniner, høner og sauer mm. Omgitt
+            av idyllisk natur. Grøset Seter ligger også fint plassert som et utgangspunkt
+            for en fottur i Trillemarka naturreservat.
           </div>
           <br />
           <div>
-            Link til facebook: <a href="https://www.facebook.com/grosetseter/">Grøset</a>
+            Link til facebook:{' '}
+            <a href="https://www.facebook.com/grosetseter/">Grøset seter</a>
           </div>
         </div>
       </div>

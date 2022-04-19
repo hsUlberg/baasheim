@@ -33,7 +33,7 @@ export function Header(props: Props): JSX.Element {
             Selskapslokale
           </button>
           <button className={style.headerButton} onClick={() => setPage(<Groset />)}>
-            Grøset
+            Grøset seter
           </button>
         </div>
       </div>
