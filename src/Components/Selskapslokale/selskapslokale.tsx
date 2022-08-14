@@ -1,10 +1,12 @@
 import React from 'react';
 import SimpleImageSlider from 'react-simple-image-slider';
 
+import useWindowDimensions from '../../utils/useWindowDimensions';
 import style from './selskapslokale.module.css';
 
 // eslint-disable-next-line no-undef
 export function Selskapslokale(): JSX.Element {
+  const { width } = useWindowDimensions();
   const urlLoveIngang = new URL(`./images/love/loveingang.JPG`, import.meta.url).href;
   const urlIngang = new URL(`./images/love/ingang.JPG`, import.meta.url).href;
   const urlStartInne = new URL(`./images/love/startinne.JPG`, import.meta.url).href;
@@ -49,15 +51,27 @@ export function Selskapslokale(): JSX.Element {
       </div>
       <div className={style.imageDiv}>
         <div className={style.imageSlider}>
-          <SimpleImageSlider
-            width={700}
-            height={700}
-            images={urls}
-            showBullets={true}
-            showNavs={true}
-            autoPlay={false}
-            loop={true}
-          />
+          {width >= 1100 ? (
+            <SimpleImageSlider
+              width={700}
+              height={700}
+              images={urls}
+              showBullets={true}
+              showNavs={true}
+              autoPlay={false}
+              loop={true}
+            />
+          ) : (
+            <SimpleImageSlider
+              width={300}
+              height={300}
+              images={urls}
+              showBullets={true}
+              showNavs={true}
+              autoPlay={false}
+              loop={true}
+            />
+          )}
         </div>
       </div>
     </div>

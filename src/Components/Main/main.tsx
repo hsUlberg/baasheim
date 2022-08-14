@@ -11,10 +11,10 @@ export function Main(): JSX.Element {
     ' selskapsLokaler',
   ]);
   const url = new URL('./images/hovedBygning-min.JPG', import.meta.url).href;
-  const MainPicture = new URL('./images/hovedBygning-stor.JPG', import.meta.url).href;
+  const MainPicture = new URL('./images/hovedBygning-air.JPG', import.meta.url).href;
 
   return (
-    <div>
+    <div className={style.mainMobile}>
       <LazyLoadImage
         effect="blur"
         alt="main"

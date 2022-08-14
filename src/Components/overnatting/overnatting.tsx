@@ -3,9 +3,12 @@ import './slider.css';
 import React from 'react';
 import SimpleImageSlider from 'react-simple-image-slider';
 
+import useWindowDimensions from '../../utils/useWindowDimensions';
 import style from './overnatting.module.css';
 // eslint-disable-next-line no-undef
 export function Overnatting(): JSX.Element {
+  const { width } = useWindowDimensions();
+
   const rom1Rom1 = new URL(`./images/rom1/rom1.JPG`, import.meta.url).href;
   const rom1Bad1 = new URL(`./images/rom1/bad1.JPG`, import.meta.url).href;
   const rom1Bad2 = new URL(`./images/rom1/bad2.JPG`, import.meta.url).href;
@@ -78,15 +81,27 @@ export function Overnatting(): JSX.Element {
       </div>
       <div className={style.imageDiv}>
         <div className={style.imageSlider}>
-          <SimpleImageSlider
-            width={700}
-            height={700}
-            images={urls}
-            showBullets={true}
-            showNavs={true}
-            autoPlay={false}
-            loop={true}
-          />
+          {width >= 1100 ? (
+            <SimpleImageSlider
+              width={700}
+              height={700}
+              images={urls}
+              showBullets={true}
+              showNavs={true}
+              autoPlay={false}
+              loop={true}
+            />
+          ) : (
+            <SimpleImageSlider
+              width={300}
+              height={300}
+              images={urls}
+              showBullets={true}
+              showNavs={true}
+              autoPlay={false}
+              loop={true}
+            />
+          )}
         </div>
       </div>
     </div>

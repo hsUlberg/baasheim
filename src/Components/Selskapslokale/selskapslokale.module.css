@@ -22,3 +22,16 @@
   width: 100%;
   margin-right: 10%;
 }
+
+@media screen and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-flow: column;
+  }
+  .imageSlider {
+    width: 300px;
+  }
+  .floatChildText {
+    width: 300px;
+  }
+}

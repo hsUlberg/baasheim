@@ -25,3 +25,17 @@
 .textElement {
   max-width: 500px;
 }
+
+@media screen and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-flow: column;
+  }
+  .mainImage {
+    width: 300px;
+  }
+  .floatChildText {
+    width: 300px;
+  }
+
+}

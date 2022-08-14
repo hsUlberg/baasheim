@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Groset } from '../groset/groset';
 import { Main } from '../Main/main';
@@ -13,6 +13,7 @@ interface Props {
 }
 // eslint-disable-next-line no-undef
 export function Header(props: Props): JSX.Element {
+  const [active, setActive] = useState<string>('hjem');
   function setPage(selectedPage: JSX.Element) {
     props.Page(selectedPage);
   }
@@ -21,18 +22,40 @@ export function Header(props: Props): JSX.Element {
       <div className={style.header}>
         <div className={style.headerText}>Båsheim Gjestegård</div>
         <div className={style.headerButtons}>
-          <button className={style.headerButton} onClick={() => setPage(<Main />)}>
+          <button
+            className={active == 'hjem' ? style.active : style.headerButton}
+            onClick={() => {
+              setPage(<Main />);
+              setActive('hjem');
+              return;
+            }}>
             Hjem
           </button>
-          <button className={style.headerButton} onClick={() => setPage(<Overnatting />)}>
+          <button
+            className={active == 'overnatting' ? style.active : style.headerButton}
+            onClick={() => {
+              setPage(<Overnatting />);
+              setActive('overnatting');
+              return;
+            }}>
             Overnatting
           </button>
           <button
-            className={style.headerButton}
-            onClick={() => setPage(<Selskapslokale />)}>
+            className={active == 'selskap' ? style.active : style.headerButton}
+            onClick={() => {
+              setPage(<Selskapslokale />);
+              setActive('selskap');
+              return;
+            }}>
             Selskapslokale
           </button>
-          <button className={style.headerButton} onClick={() => setPage(<Groset />)}>
+          <button
+            className={active == 'groset' ? style.active : style.headerButton}
+            onClick={() => {
+              setPage(<Groset />);
+              setActive('groset');
+              return;
+            }}>
             Grøset seter
           </button>
         </div>

@@ -1,9 +1,7 @@
 .headerSize {
-  height: 74px;
+  height: 87px;
 }
 .header {
-  position: fixed;
-  top: 0;
   width: 100%;
   background-color: #fff;
 }
@@ -14,8 +12,6 @@
   margin-bottom: 5px;
 }
 
-.headerContents {
-}
 
 .headerButton {
   outline: none;
@@ -39,4 +35,18 @@
   border-bottom-style: solid;
   border-width: thin;
   color: lightgray;
+}
+
+.active {
+  border: 10px;
+  /* outline: none; */
+  /* border: none; */
+  background: rgb(182, 178, 178);
+  color: #000000;
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
