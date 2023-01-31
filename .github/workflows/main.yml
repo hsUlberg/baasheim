@@ -13,10 +13,20 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Build and deploy
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build React App
+      run: npm run build
+
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       env:
-        PUBLISH_DIR: 'build'
-        BUILD_SCRIPT: 'yarn build'
+        PUBLISH_DIR: 'dist'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
