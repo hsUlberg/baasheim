@@ -3,6 +3,6 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/baasheim/',
+  base: 'https://baasheimgjestegaard.no/baasheim/',
   plugins: [reactRefresh()],
 });
