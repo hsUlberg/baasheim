@@ -70,17 +70,11 @@ export function Overnatting(): JSX.Element {
             </div>
             <div>
               For bestilling av rom eller ved andre henvendelser, ta kontakt på telefon
-              eller E-post. <br /> E-post: bku@broadpark.no <br />
+              eller E-post.
+              <br />
+              E-post: bku@broadpark.no
+              <br />
               Tlf: +47 976 10 989
-            </div>
-            <br />
-            <div className="flex gap-2">
-              <p>Link til facebook: </p>
-              <a
-                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                href="https://www.facebook.com/grosetseter/">
-                Grøset seter
-              </a>
             </div>
           </div>
           <div className="relative w-full">
