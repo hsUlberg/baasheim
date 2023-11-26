@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export function Header() {
-  const [active, setActive] = useState<string>(window.location.pathname.substring(1));
+  const [active, setActive] = useState<string>(window.location.hash.substring(2));
 
   return (
     <div className="w-full">
