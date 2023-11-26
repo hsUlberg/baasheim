@@ -39,8 +39,14 @@ export function Footer(): JSX.Element {
               <span>89</span>
             </div>
           </div>
-          <div className="w-full">
-            <img onKeyPress={handleClick} alt="map" src={url} onClick={handleClick} />
+          <div className="w-full cursor-pointer">
+            <img
+              className="cursor-pointer"
+              onKeyPress={handleClick}
+              alt="map"
+              src={url}
+              onClick={handleClick}
+            />
           </div>
         </div>
       </div>
