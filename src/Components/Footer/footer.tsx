@@ -1,9 +1,5 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React from 'react';
 
-import style from './footer.module.css';
-
-// eslint-disable-next-line no-undef
 export function Footer(): JSX.Element {
   const url = new URL('./Images/map-min.PNG', import.meta.url).href;
   const handleClick = () => {
