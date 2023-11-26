@@ -1,13 +1,9 @@
 import React from 'react';
-import SimpleImageSlider from 'react-simple-image-slider';
 
-import useWindowDimensions from '../../utils/useWindowDimensions';
-import style from './selskapslokale.module.css';
 import { ImageCarousel } from '../../utils/imageCarousel';
 
 // eslint-disable-next-line no-undef
 export function Selskapslokale(): JSX.Element {
-  const { width } = useWindowDimensions();
   const urlLoveIngang = new URL(`./images/love/loveingang.JPG`, import.meta.url).href;
   const urlIngang = new URL(`./images/love/ingang.JPG`, import.meta.url).href;
   const urlStartInne = new URL(`./images/love/startinne.JPG`, import.meta.url).href;

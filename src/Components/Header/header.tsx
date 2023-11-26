@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-
 import { Link } from 'react-router-dom';
 
-export function Header(): JSX.Element {
+export function Header() {
   const [active, setActive] = useState<string>(window.location.pathname.substring(1));
 
   return (

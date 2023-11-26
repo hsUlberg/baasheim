@@ -6,7 +6,7 @@ interface Props {
   }[];
 }
 
-export function ImageCarousel(Props: Props): JSX.Element {
+export function ImageCarousel(Props: Props) {
   const { urls } = Props;
   const [activeImage, setActiveImage] = useState(0);
   return (

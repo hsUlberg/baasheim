@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Footer(): JSX.Element {
+export function Footer() {
   const url = new URL('./Images/map-min.PNG', import.meta.url).href;
   const handleClick = () => {
     window.open(
@@ -36,13 +36,9 @@ export function Footer(): JSX.Element {
             </div>
           </div>
           <div className="w-full cursor-pointer">
-            <img
-              className="cursor-pointer"
-              onKeyPress={handleClick}
-              alt="map"
-              src={url}
-              onClick={handleClick}
-            />
+            <button onKeyPress={handleClick} onClick={handleClick}>
+              <img className="cursor-pointer" alt="map" src={url} />
+            </button>
           </div>
         </div>
       </div>

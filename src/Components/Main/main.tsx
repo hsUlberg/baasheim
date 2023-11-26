@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export function Main(): JSX.Element {
+export function Main() {
   const url = new URL('./images/hovedBygning-min.JPG', import.meta.url).href;
   const MainPicture = new URL('./images/hovedBygning-air - Copy.JPG', import.meta.url)
     .href;

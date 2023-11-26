@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Groset(): JSX.Element {
+export function Groset() {
   const url = new URL('./images/groset.JPG', import.meta.url).href;
 
   return (

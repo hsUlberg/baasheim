@@ -1,8 +1,8 @@
-import { ImageCarousel } from '../../utils/imageCarousel';
-
 import React from 'react';
 
-export function Overnatting(): JSX.Element {
+import { ImageCarousel } from '../../utils/imageCarousel';
+
+export function Overnatting() {
   const rom1Rom1 = new URL(`./images/rom1/rom1.JPG`, import.meta.url).href;
   const rom1Bad1 = new URL(`./images/rom1/bad1.JPG`, import.meta.url).href;
   const rom1Bad2 = new URL(`./images/rom1/bad2.JPG`, import.meta.url).href;

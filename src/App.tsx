@@ -1,13 +1,14 @@
 //import './App.css';
 
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import { Footer } from './Components/Footer/footer';
+import { Groset } from './Components/groset/groset';
 import { Header } from './Components/Header/header';
 import { Main } from './Components/Main/main';
 import { Overnatting } from './Components/overnatting/overnatting';
 import { Selskapslokale } from './Components/Selskapslokale/selskapslokale';
-import { Groset } from './Components/groset/groset';
 
 function App() {
   return (
