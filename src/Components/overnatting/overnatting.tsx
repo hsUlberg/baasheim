@@ -1,14 +1,8 @@
-import './slider.css';
+import { ImageCarousel } from '../../utils/imageCarousel';
 
 import React from 'react';
-import SimpleImageSlider from 'react-simple-image-slider';
 
-import useWindowDimensions from '../../utils/useWindowDimensions';
-import style from './overnatting.module.css';
-// eslint-disable-next-line no-undef
 export function Overnatting(): JSX.Element {
-  const { width } = useWindowDimensions();
-
   const rom1Rom1 = new URL(`./images/rom1/rom1.JPG`, import.meta.url).href;
   const rom1Bad1 = new URL(`./images/rom1/bad1.JPG`, import.meta.url).href;
   const rom1Bad2 = new URL(`./images/rom1/bad2.JPG`, import.meta.url).href;
@@ -60,48 +54,38 @@ export function Overnatting(): JSX.Element {
   ];
 
   return (
-    <div className={style.main}>
-      <div className={style.floatChildText}>
-        <div className={style.textElement}>
-          <h2>Overnatting</h2>
-          <div>
-            Gjestegården består av 8 soverom med nytt bad på hvert av rommene. Her kan du
-            både få dobbelt rom eller enkelt rom. I felles arealene er den opprinnelige
-            stilen godt bevart. Her kan du lene deg tilbake og nyte inntrykk fra 100 år
-            tilbake. Fasiliteter som kjøkken og TV stue kan du finne i felles arealene.
-            Tråløst internett finnes i hele huset. Priser fra 800 kr per dobbelt rom.
+    <div className="flex justify-center">
+      <div className="w-[75rem] mx-4">
+        <div className="mt-6 gap-2 space-y-2 md:flex ">
+          <div className="w-full">
+            <p className="text-4xl font-semibold ">Overnatting</p>
+            <hr className="w-20 h-1 my-3 bg-current border-0" />
+            <div>
+              Gjestegården består av 8 soverom med nytt bad på hvert av rommene. Her kan
+              du både få dobbelt rom eller enkelt rom. I felles arealene er den
+              opprinnelige stilen godt bevart. Her kan du lene deg tilbake og nyte
+              inntrykk fra 100 år tilbake. Fasiliteter som kjøkken og TV stue kan du finne
+              i felles arealene. Tråløst internett finnes i hele huset. Priser fra 800 kr
+              per dobbelt rom.
+            </div>
+            <div>
+              For bestilling av rom eller ved andre henvendelser, ta kontakt på telefon
+              eller E-post. <br /> E-post: bku@broadpark.no <br />
+              Tlf: +47 976 10 989
+            </div>
+            <br />
+            <div className="flex gap-2">
+              <p>Link til facebook: </p>
+              <a
+                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                href="https://www.facebook.com/grosetseter/">
+                Grøset seter
+              </a>
+            </div>
           </div>
-          <br />
-          <div>
-            For bestilling av rom eller ved andre henvendelser, ta kontakt på telefon
-            eller E-post. <br /> E-post: bku@broadpark.no <br />
-            Tlf: +47 976 10 989
+          <div className="relative w-full">
+            <ImageCarousel urls={urls} />
           </div>
-        </div>
-      </div>
-      <div className={style.imageDiv}>
-        <div className={style.imageSlider}>
-          {width >= 1100 ? (
-            <SimpleImageSlider
-              width={700}
-              height={700}
-              images={urls}
-              showBullets={true}
-              showNavs={true}
-              autoPlay={false}
-              loop={true}
-            />
-          ) : (
-            <SimpleImageSlider
-              width={300}
-              height={300}
-              images={urls}
-              showBullets={true}
-              showNavs={true}
-              autoPlay={false}
-              loop={true}
-            />
-          )}
         </div>
       </div>
     </div>

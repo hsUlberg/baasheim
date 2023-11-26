@@ -13,36 +13,36 @@ export function Footer(): JSX.Element {
   };
 
   return (
-    <div className={style.footer}>
-      <div className={style.floatChildText}>
-        <div className={style.footerHeaderText}>Kontakt oss</div>
-        <div className={style.footerText}>
-          Addresse: sigdalsveien 3632, 3350 Prestfoss
+    <div className="bg-[#373737] w-full mt-4">
+      <div className="flex justify-center">
+        <div className="w-[75rem] gap-2 mx-4 md:flex">
+          <div className="w-full">
+            <div className="font-[LoraRegular] text-3xl text-white mb-[3vh] mt-[5vh]">
+              Kontakt oss
+            </div>
+            <div className="text-white mb-[2vh]">
+              Addresse: sigdalsveien 3632, 3350 Prestfoss
+            </div>
+            <div className="text-white mb-[2vh]">
+              E-post: <span>bk</span>
+              <span>u@</span>
+              <span>bro</span>
+              <span>ad</span>
+              <span>park</span>
+              <span>.</span>
+              <span>no</span>
+            </div>
+            <div className="text-white mb-[2vh]">
+              Tlf: <span>+47 </span>
+              <span>976 </span>
+              <span>10 9</span>
+              <span>89</span>
+            </div>
+          </div>
+          <div className="w-full">
+            <img onKeyPress={handleClick} alt="map" src={url} onClick={handleClick} />
+          </div>
         </div>
-        <div className={style.footerText}>
-          E-post: <span>bk</span>
-          <span>u@</span>
-          <span>bro</span>
-          <span>ad</span>
-          <span>park</span>
-          <span>.</span>
-          <span>no</span>
-        </div>
-        <div className={style.footerText}>
-          Tlf: <span>+47 </span>
-          <span>976 </span>
-          <span>10 9</span>
-          <span>89</span>
-        </div>
-      </div>
-      <div className={style.imageDiv}>
-        <img
-          className={style.floatChildImage}
-          onKeyPress={handleClick}
-          alt="map"
-          src={url}
-          onClick={handleClick}
-        />
       </div>
     </div>
   );
