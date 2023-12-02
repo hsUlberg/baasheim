@@ -17,7 +17,7 @@ export function Header() {
           }}
           className={clsx([
             'cursor-pointer text-xl px-2 py-1 hover:bg-gray-400 rounded',
-            active == 'overnatting' && 'bg-gray-300',
+            active == '' && 'bg-gray-300',
           ])}
           to="/">
           Hjem
@@ -39,7 +39,7 @@ export function Header() {
           }}
           className={clsx([
             'cursor-pointer text-xl px-2 py-1 hover:bg-gray-400 rounded',
-            active == 'overnatting' && 'bg-gray-300',
+            active == 'selskapslokale' && 'bg-gray-300',
           ])}
           to="/selskapslokale">
           Selskapslokale
@@ -50,7 +50,7 @@ export function Header() {
           }}
           className={clsx([
             'cursor-pointer text-xl px-2 py-1 hover:bg-gray-400 rounded',
-            active == 'overnatting' && 'bg-gray-300',
+            active == 'groset' && 'bg-gray-300',
           ])}
           to="/groset">
           Grøset seter
