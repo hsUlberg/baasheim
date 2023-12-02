@@ -1,4 +1,5 @@
 import React from 'react';
+import { MyImageComponent } from '../../utils/lazy';
 
 export function Main() {
   const url = new URL('./images/hovedBygning-min.JPG', import.meta.url).href;
@@ -7,7 +8,7 @@ export function Main() {
 
   return (
     <div>
-      <img alt="main" src={MainPicture} className="pt-1 m-auto w-max" />
+      <MyImageComponent src={MainPicture} alt="asd" className="pt-1 m-auto w-max" />
       <div className="flex justify-center">
         <div className="w-[75rem] mx-4">
           <div className="mt-6 gap-2 space-y-2 md:flex ">
@@ -20,7 +21,7 @@ export function Main() {
                 Hovedhuset ble oppgradert i 2021 med nye bad. Hovedhuset ble satt opp i
                 1923 og formålet den gang var også overnatting, men da for
                 handelsreisende. I dag blir gjestegården brukt til overnatting og
-                arrangemanger
+                arrangementer
               </div>
               <p className="text-lg text-[#2b2b2b] font-semibold my-4">
                 Gjestegården består av
@@ -53,7 +54,7 @@ export function Main() {
               </ul>
             </div>
             <div className="w-full">
-              <img alt="second main" src={url} />
+              <MyImageComponent src={url} alt="second main" className="" />
             </div>
           </div>
         </div>

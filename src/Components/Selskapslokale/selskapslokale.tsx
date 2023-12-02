@@ -2,7 +2,6 @@ import React from 'react';
 
 import { ImageCarousel } from '../../utils/imageCarousel';
 
-// eslint-disable-next-line no-undef
 export function Selskapslokale(): JSX.Element {
   const urlLoveIngang = new URL(`./images/love/loveingang.JPG`, import.meta.url).href;
   const urlIngang = new URL(`./images/love/ingang.JPG`, import.meta.url).href;
@@ -14,10 +13,6 @@ export function Selskapslokale(): JSX.Element {
     { url: urlStartInne },
     { url: urlSluttInne },
   ];
-
-  {
-    /* legge inn bilder av kjøkken */
-  }
 
   return (
     <div className="flex justify-center">

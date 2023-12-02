@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MyImageComponent } from './lazy';
 
 interface Props {
   urls: {
@@ -22,7 +23,7 @@ export function ImageCarousel(Props: Props) {
                     ? 'duration-700 ease-in-out'
                     : 'hidden duration-700 ease-in-out'
                 }>
-                <img src={url.url} alt="..." />
+                <MyImageComponent src={url.url} alt="..." className="" />
               </div>
             );
           })}
