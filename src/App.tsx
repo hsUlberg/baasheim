@@ -11,14 +11,18 @@ import { Selskapslokale } from './Components/Selskapslokale/selskapslokale';
 function App() {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/overnatting" element={<Overnatting />} />
-        <Route path="/selskapslokale" element={<Selskapslokale />} />
-        <Route path="/groset" element={<Groset />} />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col h-screen">
+        <Header />
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/overnatting" element={<Overnatting />} />
+            <Route path="/selskapslokale" element={<Selskapslokale />} />
+            <Route path="/groset" element={<Groset />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 }
