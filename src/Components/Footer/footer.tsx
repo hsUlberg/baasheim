@@ -14,7 +14,7 @@ export function Footer() {
             </a>
             <div className="text-white my-2">
               E-post: <span>bk</span>
-              <span>u@</span>
+              <span>ulberg@</span>
               <span>bro</span>
               <span>ad</span>
               <span>park</span>
